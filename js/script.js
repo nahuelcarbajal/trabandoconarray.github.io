@@ -39,5 +39,12 @@ function showList(array) {
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);s 
+  function filtroSiS(array){
+    return array.filter((element) => typeof element === "string");
+  }
+
+  const strings= filtroSiS(strangeArray).sort();
+
+  showList(strings);
 });
 
